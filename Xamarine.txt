@@ -1,0 +1,64 @@
+1. How does a Xamarin App work in iOS?
+
+	Use your native code(Obejective C) and UI also with xamarin
+	Code in c#
+	See Architecture
+
+	– Architecture:
+
+		User Interface
+		Application Layer 
+		-	iOS                                                 
+
+
+		Bussiness layer
+		Data Access Layer
+		Data Layer
+		-	Core Library 
+
+
+
+		• User Interface - The screens, controls and data presentation code. In Xamarin.iOS these classes are wrappers around the iOS CocoaTouch frameworks. The user interface that you build looks, feels and performs like a native Objective-C application.
+		
+		• App Layer - Custom classes to bind the business layer to the user interface, typically requiring platform specific features.
+
+		• Business Layer - Business object classes and business logic.
+		
+		• Data Access Layer - Abstraction layer between the business logic and the data layer.
+
+		• Data Layer - Low-level data persistence and retrieval; the Tasky sample uses a SQLite database binding.
+
+
+
+2. Is it faster then JS frameworks like Cordova and RectNative, if so than Why?
+
+	- Cordova based Hybrid app development - Target all Platform but its not native.
+	- Mobile app development in React Native - Target iPhone and Android both, Native Behaviour. 
+	- App development using Xamarin - Target iPhone , Android and Windows also, Native Behaviour. 
+
+3. What setup is required to start development ?
+	XCode,
+	Xamarine Studio.
+
+4. What is the overall process of development and deployment ? Is there any licensing involved
+
+	For Distribute:
+
+	https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/app_distribution/app-store-distribution/publishing_to_the_app_store/
+
+	Follow Process and create .ipa file - Create archive from xamarine studio
+	then open xcode -> Windows -> organizer and upload to appstore 
+
+	For Development:
+
+	- C#
+	- For design XAMARINE Studio Or Xcode
+
+5. When to use and when not to use Xamarin. With Examples
+
+	When to use:
+	When we Target Many platform like iPhone, android, and windows
+	One developer developed application in various platform and code reusabe
+
+	When not use:
+	When we Target Single platform like iPhone or android or windows
